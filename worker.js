@@ -45,7 +45,7 @@ async function notifyTelegram(token, chatId, message, isMute) {
   }
 }
 
-async function streamToArrayBuffer(stream, size) {
+async function streamToArrayBuffer(stream) {
   const reader = stream.getReader();
   let chunks = []; // 用于存储读取到的chunks
   let receivedLength = 0; // 已接收数据的长度
